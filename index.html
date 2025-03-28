@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedicure and Manicure Store</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>Menu</h2>
+          <button class="close-btn" id="close-btn">&times;</button>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="services.html" onclick="showSection('services')">Services</a></li>
+          <li><a href="#" onclick="showSection('Order now')">Order now</a></li>
+          <li><a href="dashboard.html" onclick="showSection('my orders')">My Orders</a></li>
+          <li><a href="#" onclick="showSection('settings')">Settings</a></li>
+        </ul>
+      </div>
+    
+      <div class="main-content" id="main-content">
+        <button class="open-btn" id="open-btn">&#9776;</button>
+        
+    <header>
+        <h1>Welcome to Preshy Stores</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#order">ORDER NOW</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <main class="main-content">
+            <section id="services">
+                <h2>Our SERVICES</h2>
+                <ul>
+                    <li>Basic Pedicure - #10,000</li>
+                    <li>Deluxe Pedicure - #15,000</li>
+                    <li>Spa Pedicure - #25,000</li>
+                    <li>Basic Manicure - #10,000</li>
+                    <li>Delux Manicure - #15,000</li>
+                    <li>Spa Manicure - #25,000</li>
+                </ul>
+            </section>
+
+            <section id="order"> 
+                <h2>ORDER ONLINE</h2>
+                <form id="orderForm" action="https://formsubmit.io/uchejamesjac@gmail.com>" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="service">Select Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="basic">Basic Pedicure - #10,000</option>
+                        <option value="deluxe">Deluxe Pedicure - #15,000</option>
+                        <option value="spa">Spa Pedicure - #25,000</option>
+                        <option value="basic">Basic Manicure - #10,000</option>
+                        <option value="deluxe">Deluxe Manicure - #15,000</option>
+                        <option value="spa">Spa Manicure - #25,000</option>
+                    </select>
+
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="address">Address:</label>
+                    <input type="address" id="address" name="address" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="" id="phone" name="phone" required>
+
+                    <button type="submit">Place Order</button>
+                </form>
+                <p id="confirmation"></p>
+            </section>
+
+            <section id="contact">
+
+                <h2>Send a Message </h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <h2>CONTACT US</h2>
+                <p>Phone: 09064547949</p>
+                <p>Email: Preciousikpaetor@gmail.com</p>
+                <p>Facebook: Spothles</p>
+                <p>IG: </p>
+            </section>
+        </main>
+    </div>
+    <br>
+    <br>
+
+    <footer>
+        <p><marquee>&copy; 2025 Pedicure Store. All rights reserved.</marquee></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
