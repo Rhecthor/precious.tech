@@ -7,112 +7,142 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-          <h2>Menu</h2>
-          <button class="close-btn" id="close-btn">&times;</button>
-        </div>
-        <ul class="sidebar-menu">
-          <li><a href="services.html" onclick="showSection('services')">Services</a></li>
-          <li><a href="#" onclick="showSection('Order now')">Order now</a></li>
-          <li><a href="dashboard.html" onclick="showSection('my orders')">My Orders</a></li>
-          <li><a href="#" onclick="showSection('settings')">Settings</a></li>
-        </ul>
-      </div>
-    
-      <div class="main-content" id="main-content">
-        <button class="open-btn" id="open-btn">&#9776;</button>
-        
+   
     <header>
         <h1>Welcome to Preshy Stores</h1>
         <nav>
             <ul>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#order">ORDER NOW</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="order.html">ORDER NOW</a></li>
+                <li><a href="message.html">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
-
-
-        <main class="main-content">
-            <section id="services">
-                <h2>Our SERVICES</h2>
-                <ul>
-                    <li>Basic Pedicure - #10,000</li>
-                    <li>Deluxe Pedicure - #15,000</li>
-                    <li>Spa Pedicure - #25,000</li>
-                    <li>Basic Manicure - #10,000</li>
-                    <li>Delux Manicure - #15,000</li>
-                    <li>Spa Manicure - #25,000</li>
-                </ul>
-            </section>
-
-            <section id="order"> 
-                <h2>ORDER ONLINE</h2>
-                <form id="orderForm" action="https://formsubmit.io/uchejamesjac@gmail.com>" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="service">Select Service:</label>
-                    <select id="service" name="service" required>
-                        <option value="basic">Basic Pedicure - #10,000</option>
-                        <option value="deluxe">Deluxe Pedicure - #15,000</option>
-                        <option value="spa">Spa Pedicure - #25,000</option>
-                        <option value="basic">Basic Manicure - #10,000</option>
-                        <option value="deluxe">Deluxe Manicure - #15,000</option>
-                        <option value="spa">Spa Manicure - #25,000</option>
-                    </select>
-
-                    <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
-
-                    <label for="time">Preferred Time:</label>
-                    <input type="time" id="time" name="time" required>
-
-                    <label for="address">Address:</label>
-                    <input type="address" id="address" name="address" required>
-
-                    <label for="phone">Phone:</label>
-                    <input type="" id="phone" name="phone" required>
-
-                    <button type="submit">Place Order</button>
-                </form>
-                <p id="confirmation"></p>
-            </section>
-
-            <section id="contact">
-
-                <h2>Send a Message </h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" required>
-
-                    <label for="message">Message</label>
-                    <input type="text" id="message" name="message" required>
-
-                    <button type="submit">Submit</button>
-                </form>
-                <h2>CONTACT US</h2>
-                <p>Phone: 09064547949</p>
-                <p>Email: Preciousikpaetor@gmail.com</p>
-                <p>Facebook: Spothles</p>
-                <p>IG: </p>
-            </section>
-        </main>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our World of Beauty & Elegance</h1>
+            <p>Experience top-tier pedicure services that leave you feeling refreshed.</p>
+            <button class="cta-btn">Book an Appointment</button>
+        </div>
     </div>
-    <br>
-    <br>
+    
+  
+<!-- About Us Section -->
+<section class="about">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>We believe that beauty starts from the toes up. Our expert pedicurists provide luxurious foot care that rejuvenates and refreshes.</p>
+        <p>With high-quality products and a relaxing ambiance, we ensure every visit is a treat.</p>
+    </div>
+    <img src="crew.jpeg" alt="Relaxing Pedicure">
+</section>
 
-    <footer>
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"Absolutely the best pedicure experience! My feet have never felt this good!"</p>
+            <h4>- Jessica M.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Professional, relaxing, and worth every penny. Highly recommend!"</p>
+            <h4>- David S.</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-container">
+        <img src="beautiful perdicure.jpeg" alt="Beautiful Pedicure">
+        <img src="nail art.jpeg" alt="Nail Art">
+        <img src="foot care.jpeg" alt="Luxury Foot Care">
+    </div>
+</section>
+
+
+
+<!-- Appointment Counter -->
+<section class="counter-section">
+    <h2>Over <span id="bookingCounter">350</span> Happy Clients Booked This Month!</h2>
+</section>
+
+
+
+<!-- Fun Facts Section -->
+<section class="fun-facts">
+    <h2>Why Choose Us?</h2>
+    <div class="fact-container">
+        <div class="fact">
+            <h3><span class="count" data-count="1000">0</span>+</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="fact">
+            <h3><span class="count" data-count="5">0</span>-Star</h3>
+            <p>Ratings</p>
+        </div>
+        <div class="fact">
+            <h3><span class="count" data-count="10">0</span>+</h3>
+            <p>Years of Experience</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Table -->
+<section class="pricing">
+    <h2>Our Pricing</h2>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Basic</h3>
+            <p>Classic Pedicure</p>
+            <h4>$20</h4>
+            <button class="price-btn">Select</button>
+        </div>
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <p>Luxury Pedicure + Massage</p>
+            <h4>$40</h4>
+            <button class="price-btn">Select</button>
+        </div>
+        <div class="pricing-card">
+            <h3>VIP</h3>
+            <p>Exclusive Spa Treatment</p>
+            <h4>$60</h4>
+            <button class="price-btn">Select</button>
+        </div>
+    </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section">
+    <h2>Experience the Luxury</h2>
+    <video autoplay muted loop>
+        <source src="luxury-spa.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+
+
+
+
+
+<footer>
+    <p>&copy; 2025 Pedicure Haven. All Rights Reserved.</p>
+    <div class="social-links">
+        <a href="#"><img src="fb.jpeg" alt="Facebook"></a>
+        <a href="#"><img src="ig.jpeg" alt="Instagram"></a>
+        <a href="#"><img src="x.jpeg" alt="Twitter"></a>
+    </div>
+
+    
+    
         <p><marquee>&copy; 2025 Pedicure Store. All rights reserved.</marquee></p>
+        
     </footer>
 
     <script src="script.js"></script>

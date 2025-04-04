@@ -22,6 +22,28 @@ function orderSuccess() {
     alert('Order successful!');
 }
 
+document.getElementById('messageForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const confirmationMessage = `Thank you, ${name}! your message in complement to our services has been recieved. We will send a free services deal to ${email}. Kindly check your email in the next 48hrs ${email}.`;
+
+  document.getElementById('confirmation').textContent = confirmationMessage;
+
+  //Call the message success function 
+  messageSuccess();
+
+  //Clear the form
+  document.getElementById('messageForm').reset();
+});
+
+function messageSuccess(){
+  alert('message sent!');
+}
+
 const sidebar = document.getElementById("sidebar");
 const openBtn = document.getElementById("open-btn");
 const closeBtn = document.getElementById("close-btn");
@@ -47,3 +69,29 @@ function showSection(sectionId) {
     }
   });
 }
+
+
+// Fun Facts Counter
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".count");
+  counters.forEach(counter => {
+      let updateCount = () => {
+          let target = +counter.getAttribute("data-count");
+          let count = +counter.innerText;
+          let speed = target / 200;
+
+          if (count < target) {
+              counter.innerText = Math.ceil(count + speed);
+              setTimeout(updateCount, 20);
+          } else {
+              counter.innerText = target;
+          }
+      };
+      updateCount();
+  });
+});
+
+// Chatbot
+document.querySelector(".chat-btn").addEventListener("click", function () {
+  alert("Chatbot coming soon!");
+});
