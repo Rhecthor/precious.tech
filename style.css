@@ -186,6 +186,10 @@ button {
   transform: scale(1.05);  /* Slight pop effect on hover */
 }
 
+.cta-btn a{
+  text-decoration: none;
+  color: #fff;
+}
 
 /* About Us Section */
 .about {
@@ -295,6 +299,10 @@ footer {
   animation: fadeIn 1s ease-in-out;
 }
 
+.about-content,.service-card{
+  animation: fadeIn 1s ease-in-out;
+}
+
 
 .fade-in {
   opacity: 0;
@@ -381,10 +389,11 @@ footer {
     background-color: blue;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 0px;
     position: fixed;
     width: 100%;
     bottom: 0;
+
 }
 
 .sidebar {

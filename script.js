@@ -22,27 +22,7 @@ function orderSuccess() {
     alert('Order successful!');
 }
 
-document.getElementById('messageForm').addEventListener('submit', function(event) {
-  event.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  const confirmationMessage = `Thank you, ${name}! your message in complement to our services has been recieved. We will send a free services deal to ${email}. Kindly check your email in the next 48hrs ${email}.`;
-
-  document.getElementById('confirmation').textContent = confirmationMessage;
-
-  //Call the message success function 
-  messageSuccess();
-
-  //Clear the form
-  document.getElementById('messageForm').reset();
-});
-
-function messageSuccess(){
-  alert('message sent!');
-}
 
 const sidebar = document.getElementById("sidebar");
 const openBtn = document.getElementById("open-btn");
