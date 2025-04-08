@@ -79,59 +79,18 @@ form button:hover {
     background-color: #555;
 }
 
-.dash-container{
-  flex-wrap: wrap;
-  margin-left: 650px;
-  margin-top: 50px;
-}
 
-.dash-container h1{
-  font-family: arial;
-  font-size: 30px
-}
-.bookings{
-  display: flex;
-  width: 100%;
-}
-
-button {
-  width: 107%;
-  padding: 10px;
-  background-color: #333;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0 auto; /* Center horizontally */
-  display: block; /* Ensure block-level alignment */
-}
-
-.approved button {
-  margin: 0 auto; /* Center horizontally */
-}
-
-.dash-container h1:hover{
-  color: #ff7200;
-}
-
-.dash-container .approved .btn{
-  margin-left: 450px;
-}
-
-.dash-container .declined .btnn{
-  margin-right: 700px;
-  width: 50%;
-}
 
 .project {
   background: white;
   padding: 10px;
   margin: 15px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow:  4px rgba(0, 0, 0, 0.2);
 }
 
 .project img {
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
 }
 
@@ -396,69 +355,6 @@ footer {
 
 }
 
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    transition: transform 0.3s ease;
-  }
-  
-  .sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: blue;
-  }
-  
-  .sidebar-header h2 {
-    margin: 0;
-  }
-  
-  .close-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .sidebar-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar-menu li {
-    padding: 15px;
-  }
-  
-  .sidebar-menu li a {
-    color: black;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .sidebar-menu li:hover {
-    background-color: #444;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: white;
-    color: white;
-    transform: translateX(-100%); /* Hide sidebar initially */
-    transition: transform 0.3s ease;
-  }
-  
-  .sidebar.active {
-    transform: translateX(0); /* Show sidebar when active */
-  }
 
   .content-section {
     background: white;
@@ -554,7 +450,7 @@ footer {
       }
   }
 
-  /* 🌟 General Responsive Styles */
+  /* General Responsive Styles */
 @media (max-width: 768px) {
   /* Hero Section */
   .hero {
@@ -582,6 +478,15 @@ footer {
   .about img {
       width: 90%;
       margin-top: 15px;
+  }
+  header nav ul li a{
+    font-size: 12px
+  }
+
+  header h1{
+    font-size: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   /* Fun Facts */

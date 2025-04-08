@@ -5,7 +5,7 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    const confirmationMessage = `Thank you, ${name}! Your message on our product has been received. We will send a confirmation to ${email}. Kindly check your email in the next 24hrs ${email}.`;
+    const confirmationMessage = `Thank you, ${name}! Your message on our product has been received. We will send a date for your free perdicure or manicure service ${email}. Kindly check your email in the next 24hrs ${email}.`;
 
     document.getElementById('confirmation').textContent = confirmationMessage;
 

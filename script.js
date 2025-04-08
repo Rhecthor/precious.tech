@@ -1,5 +1,5 @@
 document.getElementById('orderForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -14,9 +14,30 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
     // Call the order success function
     orderSuccess();
 
+     const formElements = orderForm.elements;
+
+     // Function to clear all form fields 
+     function clearFormFields() {
+      for (let i = 0; i < formElements.length; i++) {
+        const elements = formElements[i];
+        if (element.tagName === 'INPUT' ||
+          element.tagName === 'TEXTAREA') {
+            element.value = '';
+          }
+      }
+     }
+
     // Clear the form
-    document.getElementById('orderForm').reset();
-});
+         orderForm.addEventListener('submit', function (event) {
+
+          setTimeout(function () {
+            clearFormFields();
+          
+         }, 100);
+
+         return true;
+                });
+}); 
 
 function orderSuccess() {
     alert('Order successful!');
@@ -24,20 +45,7 @@ function orderSuccess() {
 
 
 
-const sidebar = document.getElementById("sidebar");
-const openBtn = document.getElementById("open-btn");
-const closeBtn = document.getElementById("close-btn");
-const sections = document.querySelectorAll(".content-section");
 
-// Open sidebar
-openBtn.addEventListener("click", () => {
-  sidebar.classList.add("active");
-});
-
-// Close sidebar
-closeBtn.addEventListener("click", () => {
-  sidebar.classList.remove("active");
-});
 
 // Show selected section and hide others
 function showSection(sectionId) {
